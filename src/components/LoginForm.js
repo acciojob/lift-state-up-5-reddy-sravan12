@@ -17,6 +17,7 @@ function LoginForm({ isLoggedIn, onLogin }) {
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          title='name'
         />
       </div>
       <br />
