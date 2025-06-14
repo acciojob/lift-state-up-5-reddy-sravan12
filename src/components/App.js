@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
-      <h1>Lift State Up Demo</h1>
+      <h1>Parent Component</h1>
       {isLoggedIn ? (
         <h2>Welcome! You are logged in.</h2>
       ) : (
