@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
-function LoginForm({ isLoggedIn, onLogin }) {
+function LoginForm({ isLoggedIn, setIsLoggedIn }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onLogin()
+    if(!isLoggedIn){
+        setIsLoggedIn(true)
+    }
   };
 
   return (
