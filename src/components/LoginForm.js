@@ -6,12 +6,7 @@ function LoginForm({ isLoggedIn, onLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Normally you would validate credentials here
-    if (username && password) {
-      onLogin(); // Call parent function to update state
-    } else {
-      alert('Please enter username and password');
-    }
+    onLogin()
   };
 
   return (
