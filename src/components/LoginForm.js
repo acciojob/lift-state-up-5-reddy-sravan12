@@ -6,9 +6,8 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!isLoggedIn){
         setIsLoggedIn(true)
-    }
+
   };
 
   return (
@@ -20,6 +19,7 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           title='name'
+          required
         />
       </div>
       <br />
@@ -29,6 +29,7 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
       </div>
       <br />
