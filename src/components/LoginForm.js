@@ -38,7 +38,7 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
         />
       </div>
       <br />
-      <button type="submit">Login</button>
+      <button type="submit" onClick={handleSubmit}>Login</button>
     </form>)}
     </div>
   );
