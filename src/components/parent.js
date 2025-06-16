@@ -7,11 +7,9 @@ function Parent() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
       <h1>Parent Component</h1>
-      {isLoggedIn ? (
-        <h2>You are logged in!</h2>
-      ) : (
+     
         <LoginForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-      )}
+    
     </div>
   );
 }

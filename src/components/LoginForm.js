@@ -11,6 +11,11 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
   };
 
   return (
+    <div>
+ {isLoggedIn ? (
+        <h2>You are logged in!</h2>
+      ) : (
+    
     <form onSubmit={handleSubmit}>
       <div>
         <label>Username: </label>
@@ -34,7 +39,8 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
       </div>
       <br />
       <button type="submit">Login</button>
-    </form>
+    </form>)}
+    </div>
   );
 }
 
