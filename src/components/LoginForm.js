@@ -13,7 +13,7 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div>
  {isLoggedIn ? (
-        <h2>You are logged in!</h2>
+        <p>You are logged in!</p>
       ) : (
     
     <form onSubmit={handleSubmit}>
